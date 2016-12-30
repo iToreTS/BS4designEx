@@ -6393,3 +6393,53 @@ footer {
 .bottom_ul li a {
   color: #FFF;
   font-size: 12px; }
+
+/* CALL OUT */
+/*page styling*/
+.bs-callout {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee;
+  border-image: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px 1px 1px 5px;
+  margin-bottom: 5px;
+  padding: 20px; }
+
+.bs-right-panel {
+  padding: 10px;
+  width: 100%;
+  float: none;
+  text-align: center;
+  margin: 0 auto; }
+
+.bs-right-panel img {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.bs-callout:last-child {
+  margin-bottom: 0px; }
+
+.bs-callout h4,
+.bs-callout h5 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-weight: 600; }
+
+.bs-callout-danger {
+  border-left-color: #d9534f; }
+
+.bs-callout-danger h4,
+.bs-callout-danger h5 {
+  color: #d9534f; }
+
+.bs-callout-success {
+  border-left-color: #5cb85c; }
+
+.bs-callout-success h4,
+.bs-callout-success h5 {
+  color: #5cb85c; }
