@@ -19,6 +19,7 @@
           <button class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">Conrad Waldvogel</button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Profil</a>
+            <a class="dropdown-item" href="#">Faste oppdrag</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Logg ut</a>
           </div>
@@ -73,7 +74,7 @@
               </div>
               <div class="row">&nbsp;</div>
               <div class="row" style="margin-top:65px;">
-                <a href="#" class="btn btn btn-secondary" style="color:#5bc0de;">Søk etter oppdrag...</a>
+                <a href="#" class="btn btn btn-secondary" style="color:#5bc0de;">Søk etter oppdrag...#</a>
               </div>
             </div>
           </div>
@@ -135,7 +136,7 @@
     </div>
   </div>
   <div class="py-5" id="FillInCollie">
-    <div class="container">
+    <div class="container2" style="padding: 10px;">
       <div class="row">
         <div class="col-md-4">
           <img class="center-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=Lillesand&amp;zoom=18&amp;size=640x480&amp;sensor=false">
@@ -146,35 +147,57 @@
             <div class="form-group">
               <label>Hva skal sendes</label>
               <input type="test" class="form-control" placeholder="Hva ?">
+              <a href="">Mer detaljer...</a><a class="pull-right" href="">Legg til bilder...</a>
             </div>
             <div class="form-group">
               <label>Vekt</label>
-              <input type="number" class="form-control" placeholder="Vekt">
+              <div class="input-group">
+                <input type="number" class="form-control" placeholder="Vekt">
+                <span class="input-group-addon" id="weigth-addon">kg</span>
+              </div>
+
             </div>
             <div class="form-group">
               <div class="col-lg-12">
                 <label>H / L / B</label>
               </div>
               <div class="col-lg-4">
-                <input type="number" class="form-control" placeholder="Høyde">
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="Høyde">
+                  <span class="input-group-addon" id="height-addon">cm</span>
+                </div>
               </div>
               <div class="col-lg-4">
-                <input type="number" class="form-control" placeholder="Lengde">
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="Lengde">
+                  <span class="input-group-addon" id="length-addon">cm</span>
+                </div>
               </div>
               <div class="col-lg-4">
-                <input type="number" class="form-control" placeholder="Bredde">
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="Bredde">
+                  <span class="input-group-addon" id="width-addon">cm</span>
+                </div>
               </div>
             </div>
             <div class="form-group">
-              <label>Ønsket pris og leveranse dato:</label>
+              <div class="col-lg-12"><label>Ønsket pris og leveranse dato:</label></div>
               <div class="col-lg-6">
-                <input type="number" class="form-control" placeholder="Ønsket pris">
+
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="Ønsket pris">
+                  <span class="input-group-addon" id="prize-addon">kr</span>
+                </div>
               </div>
               <div class="col-lg-6">
-                <input type="date" class="form-control" placeholder="Ønsket pris">
+
+                <div class="input-group">
+                  <input type="date" class="form-control" placeholder="">
+                  <span class="input-group-addon" id="date-addon"><i class="fa fa-calendar"></i></span>
+                </div>
               </div>
             </div>
-            <a href="#myOfferlist" class="btn btn-primary">Legg i kurv...</a>
+            <a href="#myOfferlist" class="btn btn-primary" style="margin-top:10px;">Legg i kurv...</a>
           </form>
         </div>
         <div class="col-md-4">
@@ -193,6 +216,7 @@
         <div class="col-md-4">
           <div class="card my-1">
             <div class="bg-success card-block text-center">
+              <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
               <h2 class="card-title text-white">Bring Express</h2>
               <h3 class="text-white">1000,-</h3>
             </div>
@@ -225,6 +249,7 @@
           </div>-->
           <div class="card ">
             <div class="bg-success card-block text-center">
+              <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star"></i>
               <h2 class="card-title text-white">DHL Express</h2>
               <h3 class="text-white">1050,-</h3>
             </div>
@@ -243,6 +268,7 @@
         <div class="col-md-4">
           <div class="card my-1">
             <div class="bg-info card-block text-center">
+              <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
               <h3 class="card-title text-white">Per Simonsen (privat)</h3>
               <h3 class="text-white">700,-</h3>
             </div>
@@ -387,6 +413,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
   <div id="gtx-anchor" style="position: absolute; visibility: hidden; left: 1033.5px; top: 681px; width: 100.797px; height: 32px;"></div>
+
+
+
+
 
 
 
